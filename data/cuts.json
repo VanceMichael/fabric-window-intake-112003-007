@@ -15,7 +15,9 @@
       100,
       700
     ],
-    "flip_width": true
+    "flip_width": true,
+    "known": 0,
+    "face": "front"
   },
   {
     "id": "C2",
@@ -33,7 +35,9 @@
       0,
       600
     ],
-    "flip_width": false
+    "flip_width": false,
+    "known": 0,
+    "face": "front"
   },
   {
     "id": "C3",
@@ -57,6 +61,90 @@
       100,
       700
     ],
-    "flip_width": false
+    "flip_width": false,
+    "known": 0,
+    "face": "back"
+  },
+  {
+    "id": "C4",
+    "child": "R30",
+    "child_span": [
+      0,
+      200
+    ],
+    "parent": "R20",
+    "parent_ends": [
+      600,
+      800
+    ],
+    "trim": [
+      0,
+      600
+    ],
+    "flip_width": false,
+    "face": "front",
+    "known": 0
+  },
+  {
+    "id": "C5",
+    "child": "R30",
+    "child_span": [
+      200,
+      400
+    ],
+    "parent": "R20",
+    "parent_ends": [
+      800,
+      1000
+    ],
+    "trim": [
+      0,
+      600
+    ],
+    "flip_width": true,
+    "face": "front",
+    "known": 0
+  },
+  {
+    "id": "RR1",
+    "supersedes": "C1",
+    "child": "R20",
+    "child_span": [
+      0,
+      800
+    ],
+    "parent": "M10",
+    "parent_ends": [
+      1850,
+      1050
+    ],
+    "trim": [
+      100,
+      700
+    ],
+    "flip_width": true,
+    "face": "front",
+    "known": 2
+  },
+  {
+    "id": "RR2",
+    "supersedes": "C3",
+    "child": "R20",
+    "child_span": [
+      1200,
+      1600
+    ],
+    "parent": "M12",
+    "parent_ends": [
+      150,
+      550
+    ],
+    "trim": [
+      100,
+      700
+    ],
+    "flip_width": false,
+    "face": "back",
+    "known": 3
   }
 ]

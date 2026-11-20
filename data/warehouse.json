@@ -1,34 +1,57 @@
 [
   {
+    "known": 0,
     "ref": "OUT80",
+    "piece": "P800",
+    "order": "A20",
     "roll": "R20",
     "span": [
       0,
       800
     ],
-    "status": "sent",
+    "state": "sent",
     "cuts": [
       "C1"
-    ]
-  },
-  {
-    "ref": "RR1",
-    "recheck": "C1",
-    "parent_ends": [
-      1850,
-      1050
     ],
-    "observed_drawn": [
-      0,
-      800
+    "destination": "Cutter-A",
+    "evidence": [
+      "E1",
+      "E1L"
     ]
   },
   {
-    "ref": "RR2",
-    "recheck": "C3",
-    "parent_ends": [
-      150,
-      550
+    "known": 0,
+    "ref": "HOLD11",
+    "piece": "P801",
+    "order": "A20",
+    "roll": "R20",
+    "span": [
+      800,
+      1600
+    ],
+    "state": "staged",
+    "cuts": [
+      "C2",
+      "C3"
+    ],
+    "destination": "Cutter-A",
+    "evidence": [
+      "E3",
+      "E3L"
     ]
+  },
+  {
+    "known": 4,
+    "ref": "RET95",
+    "piece": "P800",
+    "part_of": "OUT80",
+    "roll": "R20",
+    "span": [
+      0,
+      200
+    ],
+    "state": "returned",
+    "location": "W2-S3",
+    "accepted_order": "R95"
   }
 ]

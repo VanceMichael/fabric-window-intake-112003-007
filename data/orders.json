@@ -18,10 +18,80 @@
         1600
       ]
     ],
-    "quota": {
-      "M10": 3,
-      "M11": 2,
-      "M12": 2
-    }
+    "id": "A20",
+    "known": 0,
+    "deadline": 3,
+    "tracks": [
+      {
+        "span": [
+          0,
+          1600
+        ],
+        "width": [
+          0,
+          600
+        ]
+      }
+    ]
+  },
+  {
+    "roll": "R30",
+    "purpose": "深色拼片",
+    "length": 400,
+    "width": 600,
+    "cells_mm": [
+      200,
+      300
+    ],
+    "items": {
+      "delta_e_max": "2.1",
+      "light_pass": true
+    },
+    "indivisible": [],
+    "id": "A30",
+    "known": 0,
+    "deadline": 4,
+    "tracks": [
+      {
+        "span": [
+          0,
+          400
+        ],
+        "width": [
+          0,
+          600
+        ]
+      }
+    ]
+  },
+  {
+    "roll": "R20",
+    "purpose": "退回料深色裁片",
+    "length": 1600,
+    "width": 600,
+    "cells_mm": [
+      200,
+      300
+    ],
+    "items": {
+      "delta_e_max": "2.3",
+      "light_pass": true
+    },
+    "indivisible": [],
+    "id": "R95",
+    "known": 4,
+    "deadline": 6,
+    "tracks": [
+      {
+        "span": [
+          0,
+          200
+        ],
+        "width": [
+          0,
+          600
+        ]
+      }
+    ]
   }
 ]

@@ -1,0 +1,228 @@
+{
+  "edition": "MILL-LINE-2",
+  "windows": [
+    {
+      "id": "E1",
+      "roll": "M10",
+      "face": "front",
+      "span": [
+        1000,
+        1800
+      ],
+      "width": [
+        100,
+        700
+      ],
+      "catalog_turn": 0,
+      "ready": 0,
+      "expires": 6,
+      "item": "delta_e",
+      "file": "mill/E1.json",
+      "media": "application/json",
+      "sha256": "4e97169fbab5231a6ee7158fd82df11a985f4b3e96269379a257a194e339e587"
+    },
+    {
+      "id": "E1L",
+      "roll": "M10",
+      "face": "front",
+      "span": [
+        1000,
+        1800
+      ],
+      "width": [
+        100,
+        700
+      ],
+      "catalog_turn": 0,
+      "ready": 0,
+      "expires": 6,
+      "item": "light",
+      "file": "mill/E1L.csv",
+      "media": "text/csv",
+      "sha256": "e8cc487ed7d2c939ec7fe2635d843a60df3228c78d23dc18f7d6498b39708675"
+    },
+    {
+      "id": "E2",
+      "roll": "M10",
+      "face": "front",
+      "span": [
+        1800,
+        1900
+      ],
+      "width": [
+        100,
+        700
+      ],
+      "catalog_turn": 1,
+      "ready": 1,
+      "expires": 3,
+      "item": "delta_e",
+      "file": "mill/E2.json",
+      "media": "application/json",
+      "sha256": "178bc1488c77e80df7c9b33fac00a66568af42294fb6d073f62fb9c7e6518470"
+    },
+    {
+      "id": "E2L",
+      "roll": "M10",
+      "face": "front",
+      "span": [
+        1800,
+        1900
+      ],
+      "width": [
+        100,
+        700
+      ],
+      "catalog_turn": 1,
+      "ready": 1,
+      "expires": 3,
+      "item": "light",
+      "file": "mill/E2L.csv",
+      "media": "text/csv",
+      "sha256": "020405bba1d4afe19ff6bde336e9b7e4db281a3455a5e8b0e53b4eac250e1181"
+    },
+    {
+      "id": "E3",
+      "roll": "M11",
+      "face": "front",
+      "span": [
+        0,
+        400
+      ],
+      "width": [
+        0,
+        600
+      ],
+      "catalog_turn": 0,
+      "ready": 0,
+      "expires": 6,
+      "item": "delta_e",
+      "file": "mill/E3.json",
+      "media": "application/json",
+      "sha256": "b82331cf32bddc5fd6170eb8949367077325fd38d2876ef0e6e72ed4d17ab25e"
+    },
+    {
+      "id": "E3L",
+      "roll": "M11",
+      "face": "front",
+      "span": [
+        0,
+        400
+      ],
+      "width": [
+        0,
+        600
+      ],
+      "catalog_turn": 0,
+      "ready": 0,
+      "expires": 6,
+      "item": "light",
+      "file": "mill/E3L.csv",
+      "media": "text/csv",
+      "sha256": "a568e71996bfe232135401617533cd72f5ac3932fc604cef65f51ea3efccdaf7"
+    },
+    {
+      "id": "E4",
+      "roll": "M12",
+      "face": "back",
+      "span": [
+        100,
+        550
+      ],
+      "width": [
+        100,
+        700
+      ],
+      "catalog_turn": 0,
+      "ready": 0,
+      "expires": 6,
+      "item": "delta_e",
+      "file": "mill/E4.json",
+      "media": "application/json",
+      "sha256": "5580e90635e22f22223757a5d106469891c123e4ab3029fe08bb1645d49b68ca"
+    },
+    {
+      "id": "E4L",
+      "roll": "M12",
+      "face": "back",
+      "span": [
+        100,
+        550
+      ],
+      "width": [
+        100,
+        700
+      ],
+      "catalog_turn": 0,
+      "ready": 0,
+      "expires": 6,
+      "item": "light",
+      "file": "mill/E4L.csv",
+      "media": "text/csv",
+      "sha256": "0b78e64f6806420ed0e2d29b51f823844286bad9184751ccf5ba7a28864b0284"
+    },
+    {
+      "id": "E5",
+      "roll": "M11",
+      "face": "front",
+      "span": [
+        50,
+        100
+      ],
+      "width": [
+        100,
+        200
+      ],
+      "catalog_turn": 1,
+      "ready": 3,
+      "expires": 7,
+      "item": "delta_e",
+      "file": "mill/E5.json",
+      "media": "application/json",
+      "sha256": "d3c1d29c42be5adc708218922ebbd14b334b189817a5ea3d623c4699ab662117",
+      "replaces": {
+        "document": "E3",
+        "samples": [
+          "M11-75-150"
+        ]
+      }
+    },
+    {
+      "id": "EX",
+      "roll": "M10",
+      "face": "back",
+      "span": [
+        900,
+        1000
+      ],
+      "width": [
+        100,
+        700
+      ],
+      "catalog_turn": 0,
+      "ready": 0,
+      "expires": 6,
+      "item": "delta_e",
+      "file": "mill/EX.json",
+      "media": "application/json",
+      "sha256": "af6b77a38b3349c0501baebe39beeb29e1870de7a0b4fdc08006bc418f34211f"
+    }
+  ],
+  "quota": {
+    "A20": {
+      "M10": 3,
+      "M11": 2,
+      "M12": 2
+    },
+    "A30": {
+      "M10": 2,
+      "M11": 2,
+      "M12": 2
+    },
+    "R95": {
+      "M10": 2,
+      "M11": 2,
+      "M12": 2
+    }
+  }
+}
