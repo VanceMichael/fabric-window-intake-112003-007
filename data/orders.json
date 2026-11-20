@@ -1,0 +1,27 @@
+[
+  {
+    "roll": "R20",
+    "purpose": "外层浅色",
+    "length": 1600,
+    "width": 600,
+    "cells_mm": [
+      200,
+      300
+    ],
+    "items": {
+      "delta_e_max": "1.4",
+      "light_pass": true
+    },
+    "indivisible": [
+      [
+        800,
+        1600
+      ]
+    ],
+    "quota": {
+      "M10": 3,
+      "M11": 2,
+      "M12": 2
+    }
+  }
+]

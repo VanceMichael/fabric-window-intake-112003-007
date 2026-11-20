@@ -1,0 +1,62 @@
+[
+  {
+    "id": "C1",
+    "child": "R20",
+    "child_span": [
+      0,
+      800
+    ],
+    "parent": "M10",
+    "parent_ends": [
+      1800,
+      1000
+    ],
+    "trim": [
+      100,
+      700
+    ],
+    "flip_width": true
+  },
+  {
+    "id": "C2",
+    "child": "R20",
+    "child_span": [
+      800,
+      1200
+    ],
+    "parent": "M11",
+    "parent_ends": [
+      0,
+      400
+    ],
+    "trim": [
+      0,
+      600
+    ],
+    "flip_width": false
+  },
+  {
+    "id": "C3",
+    "child": "R20",
+    "child_span": [
+      1200,
+      1600
+    ],
+    "parent": "M12",
+    "candidate_ends": [
+      [
+        100,
+        500
+      ],
+      [
+        150,
+        550
+      ]
+    ],
+    "trim": [
+      100,
+      700
+    ],
+    "flip_width": false
+  }
+]

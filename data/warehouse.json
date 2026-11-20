@@ -1,0 +1,34 @@
+[
+  {
+    "ref": "OUT80",
+    "roll": "R20",
+    "span": [
+      0,
+      800
+    ],
+    "status": "sent",
+    "cuts": [
+      "C1"
+    ]
+  },
+  {
+    "ref": "RR1",
+    "recheck": "C1",
+    "parent_ends": [
+      1850,
+      1050
+    ],
+    "observed_drawn": [
+      0,
+      800
+    ]
+  },
+  {
+    "ref": "RR2",
+    "recheck": "C3",
+    "parent_ends": [
+      150,
+      550
+    ]
+  }
+]
