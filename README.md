@@ -24,3 +24,20 @@ candidate_ends 是来源尚未确认的候选，supersedes 指被复尺替换的
 ## 装卸凭据
 
 staged 表示备料后仍在仓，sent 表示已离仓，returned 表示按原出库凭据退回实际范围，附实际库位。已送出部分的原坐标解释、旧检测原件和交接号在其 evidence、cuts、destination 中保持。退回原件可按后续工单重新核查。后续发出属于新的交付，尚未回仓的同实物段仍按原交接追踪。
+
+## 裁床客户端（cutter/）
+
+裁床侧的检测收件与放行核对，仅依赖标准库：
+
+- `cutter.geometry`：分切链坐标变换与母卷溯源。有向端点（倒卷时子卷首毫米对应父卷高端减 1）、trim、flip_width 逐段应用；复尺单按 known 轮次替换旧单且只更正指定段；candidate_ends 未收敛前同一段保留多个母卷候选。
+- `cutter.store`：已取原件证据库。字节按目录 SHA-256 校验后留存，可落盘、可跨工单复用；复测窗口的 replaces 声明只作废指定样位的本项目观察。
+- `cutter.planner`：按工单条带映射领取窗口，expires 临近者优先，不按整卷烧额度；429 只停该工单该母卷本轮，425 下轮再试，领件号稳定可原样重试。
+- `cutter.verify`：工艺网格逐格核对。声明覆盖到本范围的窗口未取到记少领原件；取齐但无样位记样点不够；有效观测超工单阈值记明确不符，且不能被同格合格样点覆盖；候选分歧记候选未定。不可拆条带一处缺证整条待确认。
+- `cutter.warehouse`：台账三类事实分别核对——备料停/缓、离库按原交接号追回（保留当时放行证据）、退回段按后续工单重核（有资格再发/等补证/不符隔离），未回仓段仍按原交接追踪。
+- `cutter.monitor` + `run_scenario.py`：单轮编排与端到端演练。
+
+```sh
+python3 run_scenario.py            # 进程内起资料端，拨钟 0..6 演示全流程
+python3 run_scenario.py --base http://127.0.0.1:8040 --store evidence-cache
+python3 -m unittest discover -s tests -v
+```
